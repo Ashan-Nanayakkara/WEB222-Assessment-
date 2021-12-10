@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <script src="info.js"></script>
+    <title>Thilanka Ashan Nanayakkara</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-bar_item"><a href="honesty.html">Honesty</a></li>
+            <li class="nav-bar_item"><a href="reflection.html">Reflection</a></li>
+            <li class="nav-bar_item"><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+    <section class="card">
+        <div class="card__img">
+            <form onsubmit="return validateForm(this)" name="signup" id="signup" action="https://httpbin.org/post">
+                <div class="container">
+                    <h1>Register</h1>
+                    <p>Please fill in this form</p>
+                    <hr>
+                    <input type="hidden" name="lastName" id="lastName" value="Thilanka Ashan Nanayakkara" />
+                    <input type="hidden" name="studentId" id="studentId" value="145722203" />
+
+                    <label for="Firstname"><b>First name</b></label>
+                    <input type="text" placeholder="Enter First name" name="Firstname" id="Firstname" required>
+
+                    <label for="Lastname"><b>Last name</b></label>
+                    <input type="text" placeholder="Enter Last name" name="Lastname" id="Lastname" required>
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="text" placeholder="Enter Password" name="password" id="password" required>
+
+                    <label for="username"><b>Username</b></label>
+                    <input type="password" placeholder="Enter Username" name="username" id="username" required>
+
+                    <label for="EducationStatus"><b>Education Status</b></label>
+                    <br>
+                    <br>
+                    Graduated: <input type="radio" name="EducationStatus" id="EducationStatus">
+                    &nbsp;&nbsp;&nbsp; Current enrolled: <input type="radio" name="Currentenrolled"
+                        id="Currentenrolled">
+                    &nbsp;&nbsp;&nbsp; Did not graduate: <input type="radio" name="Didnotgraduate" id="Didnotgraduate">
+                    <br><br>
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                    <hr>
+
+                    <label for="age"><b>Age</b></label>
+                    <input type="text" placeholder="Enter Age" name="age" id="age" required>
+                    <button type="submit" class="submitbtn">Submit</button>
+                    <br>
+                    <button onclick="reset()" type="button" class="resetbtn">Rest</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
